@@ -88,7 +88,7 @@ if hit_fold == "hit":
 elif hit_fold == "fold":
     print(total)
     print("you win")
-    exit()
+    
 else :
     print("please enter hit or fold")
 if total >= 21:
@@ -100,12 +100,11 @@ hit_fold = input("would you like to hit or fold? ")
 if hit_fold == "hit":
     card7 = random.randint(1,12)
     print("your seventh card is",card7)
-    total = total+card2
+    total = total+card7
     print("your current total is",total)
 elif hit_fold == "fold":
     print(total)
     print("you win")
-    exit()
 else :
     print("please enter hit or fold")
 if total >= 21:
